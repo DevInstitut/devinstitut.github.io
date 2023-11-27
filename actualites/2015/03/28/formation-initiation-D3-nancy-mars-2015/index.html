@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="fr"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="fr"> <![endif]-->
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dev Institut | Parcours d&#39;initiation D3 à Nancy</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+
+    <!-- CSS -->
+    <link href="/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="http://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <meta name="description" content="D3 ?D3, comme Data Driven Document, est une librairie conçue pour créer des visualisations de données sur la base les standards du Web (HTML, JS, CSS, SVG, Canvas, …). Son objectif n’est pas de faire">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parcours d&#39;initiation D3 à Nancy">
+<meta property="og:url" content="http://www.dev-institut.fr/actualites/2015/03/28/formation-initiation-D3-nancy-mars-2015/index.html">
+<meta property="og:site_name" content="Dev Institut">
+<meta property="og:description" content="D3 ?D3, comme Data Driven Document, est une librairie conçue pour créer des visualisations de données sur la base les standards du Web (HTML, JS, CSS, SVG, Canvas, …). Son objectif n’est pas de faire">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="http://www.dev-institut.fr/img/posts/2015/d3js-data-ui.png">
+<meta property="article:published_time" content="2015-03-28T18:46:25.000Z">
+<meta property="article:modified_time" content="2023-11-27T18:35:39.695Z">
+<meta property="article:author" content="Dev Institut">
+<meta property="article:tag" content="d3js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.dev-institut.fr/img/posts/2015/d3js-data-ui.png">
+<meta name="twitter:creator" content="@devinstitut">
+    
+    <link rel="alternative" href="/atom.xml" title="Dev Institut" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="">
+    
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+
+
+<header class="hidden-sm hidden-md hidden-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <img src="/img/logo.svg" width="48"> <i class=" icon-email"></i> contact@dev-institut.fr</span>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="z-depth-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="mobnav-btn"></div>
+                <img class="pull-left visible-sm visible-md visible-lg" src="/img/logo.svg" width="48">
+                <ul class="sf-menu">
+                                
+
+                    <li class=""><a href="/">Accueil</a></li>
+                    <li class=""><a href="/formations/">Formation</a></li>
+                    <li class="active"><a href="/actualites/">Actualité</a></li>
+                    <!--<li class=""><a href="/tutoriels/">Tutoriel</a></li>-->
+                    <li class=""><a href="/evenements/">Evénement</a></li>
+                    <li class=""><a href="/qualite/parcours/">Qualité</a></li>
+                    <li class=""><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="main_content">
+<div class="container page animated fadeIn">
+    <div class="col-md-9">
+        <h1>Parcours d&#39;initiation D3 à Nancy</h1>
+        <div class="add_bottom_30">
+            <a href="/actualites/2015/03/28/formation-initiation-D3-nancy-mars-2015/" title="Parcours d&#39;initiation D3 à Nancy"><img src="/img/posts/2015/d3js-nancy.jpg" alt="" class="img-responsive"></a>
+        </div>
+
+        <h2 id="D3"><a href="#D3" class="headerlink" title="D3 ?"></a>D3 ?</h2><p>D3, comme Data Driven Document, est une librairie conçue pour créer des visualisations de données sur la base les standards du Web (HTML, JS, CSS, SVG, Canvas, …).</p>
+<p>Son objectif n’est pas de faire dans le navigateur l’équivalent des graphiques que vous générez avec vos tableurs Excel mais plutôt de créer une expérience utilisateur riche de visualisation des données. Il faut inclure dans cette expérience riche les interactions utilisateurs.</p>
+<p>L’interaction utilisateur est une partie importante dans ce monde de la visualisation des données. Si avant, une image exportée depuis votre tableur préféré suffisait, aujourd’hui les utilisateurs sont plus exigeants et souhaitent naviguer / interagir avec les données que vous présentez.</p>
+<p>D3 propose une boite à outils très complète et “bas niveau” pour faire le lien entre des données et une interface utilisateur.</p>
+<p>D3 entre les données et l’interface utilisateur.</p>
+<p><img src="/img/posts/2015/d3js-data-ui.png" alt="D3js"></p>
+<p>L’écosystème de D3 est composé :</p>
+<ul>
+<li>des plugins qui viennent complétés l’outillage D3</li>
+<li>de librairies qui simplifient la création de graphiques (C3js, NVDjs, …) basées sur D3.</li>
+<li>une énorme base d’exemples d’expériences visuelles créées avec D3. Vous copiez le code et formater les données pour réutiliser le rendu.</li>
+<li>des outils de générations de graphique WYSIWYG</li>
+</ul>
+<h2 id="Apprentissage-de-D3"><a href="#Apprentissage-de-D3" class="headerlink" title="Apprentissage de D3"></a>Apprentissage de D3</h2><p>Les développeurs en quête d’un moyen rapide de générer un “beau” graphique seront probablement déçus de D3. Ce dernier impose quelque chose que les développeurs pressés n’aiment pas : comprendre. Ils vont donc avoir tendance à s’orienter vers des librairies dites “clés en main” comme par exemple C3js.</p>
+<p>Il y a un ticket d’entrée dans D3 et tout report de votre compréhension à plus tard d’une ligne de code est une dette technique que vous finirez par payer.</p>
+<p>En revanche, tout développeur qui franchit cette barrière d’entrée découvre toute la puissance de D3 et un niveau de personnalisation infini. Il va entrevoir des relais de créativité / innovation dans la présentation des données.</p>
+<h2 id="Le-parcours-d’initiation-a-D3"><a href="#Le-parcours-d’initiation-a-D3" class="headerlink" title="Le parcours d’initiation à D3"></a>Le parcours d’initiation à D3</h2><p>Les 26 et 27 mars, j’étais à Nancy pour faire traverser cette barrière d’entrée à 4 développeurs Front-End expérimentés (milieu bancaire).</p>
+<p>Le parcours initiatique que nous avons suivi est composé de 10 travaux pratiques :</p>
+<ul>
+<li><p><strong>TP 1 - Créer un premier graphique HTML avec D3</strong>. L’idée ici est de créer un histogramme agréable à voir uniquement composé d’éléments HTML (DIV) à partir d’un tableau de données.</p>
+</li>
+<li><p><strong>TP 2 - Premier graphique SVG</strong>. Nous revoyons toutes les bases de SVG et nous dessinons plusieurs formes avec D3 (aucun code ajouté dans la page HTML).</p>
+</li>
+<li><p><strong>TP 3 - Les transitions D3</strong>. Les développeurs découvrent avec quelle facilité ils peuvent créer des animations agréables avec très peu de lignes de code. Ils expriment généralement leurs créativités à travers ce TP en :</p>
+<ul>
+<li>bougeant tous les éléments du graphique</li>
+<li>masquant et affichant progressivement des éléments</li>
+<li>ou encore en modifiant plusieurs fois des couleurs d’éléments HTML et/ou SVG</li>
+</ul>
+</li>
+<li><p><strong>TP 4 - Manipuler les données</strong>. Les données sont désormais récupérées à distance. Les développeurs apprennent à se servir des échelles pour dessiner.</p>
+</li>
+<li><p><strong>TP 5 - Les événements</strong>. Le développeur rend tous les éléments graphiques interactifs. Il apprend même à faire du templating HTML (sans variable dans le template… oui c’est magique D3…) avec D3.</p>
+</li>
+<li><p><strong>TP 6 - Les axes et composants personnalisés complexes</strong>. Nous faisons connaissance avec le composant axe de D3 pour tracer les axes X et Y. Nous rentrons dans le détail de sa personnalisation. Nous apprenons aussi à travers ce TP à créer des composants graphiques complexes réutilisables personnalisés. Les fondements du fonctionnement des composants D3 sont posés à cette étape.</p>
+</li>
+<li><p><strong>TP 7 - Les lignes, les arcs et les symboles</strong>. Les développeurs apprennent à se servir des générateurs D3 pour tracer des courbes.</p>
+</li>
+<li><p><strong>TP 8 - Histogramme</strong>. A cette étape, nous avons déjà représenté des histogrammes de plusieurs façons : avec des DIVs et avec du SVG. Nous faisons connaissance avec ce qu’on appelle des composants d’agencement (layout en anglais).</p>
+</li>
+<li><p><strong>TP 9 - Camembert</strong>. Nous sommes en France, alors le tracé d’un graphe qui porte le nom d’un fromage est un indispensable dans ce parcours initiatique.</p>
+</li>
+<li><p><strong>TP 10 - Cartographie</strong>. Cet exercice est un saut pour le développeur dans le monde de la cartographie. Après une remise à niveau du vocabulaire, nous créons une carte interactive des régions de France.</p>
+</li>
+</ul>
+<h2 id="A-votre-tour-de-franchir-la-barriere"><a href="#A-votre-tour-de-franchir-la-barriere" class="headerlink" title="A votre tour de franchir la barrière"></a>A votre tour de franchir la barrière</h2><p>Les 4 développeurs de Nancy sont très satisfaits de ce parcours. Ils ont pu franchir la barrière d’entrée en 2 petites journées ludiques et maintenant les voilà pleins de rêves et d’énergie pour réinventer la manière de présenter les données à leurs clients.</p>
+<p>Si vous aussi, vous souhaitez aller de l’autre côté, tendez la main, je vous y emmène avec plaisir ;)</p>
+<h4 id="Liens"><a href="#Liens" class="headerlink" title="Liens"></a>Liens</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/mbostock/d3/wiki/Gallery">Exemples D3</a></li>
+<li><a target="_blank" rel="noopener" href="http://c3js.org/">Librairie C3js</a></li>
+<li><a href="http://www.dev-institut.fr/formations/web/d3js/">Formation Initiation à D3</a></li>
+</ul>
+
+
+
+        <hr/>
+        <div class="box_style_1">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="https://avatars1.githubusercontent.com/u/1372183?v=3&amp;s=100" alt="Teacher" class="img-circle styled">
+                </div>
+                <div class="col-md-4">
+                   <b>Rossi Oddet</b>
+                    <div class="">Formateur Web, Java &amp; Co. <br/> <i class="icon-twitter"></i> <a target="_blank" rel="noopener" href="http://twitter.com/rossioddet">@rossioddet</a></div>
+                    
+                </div>
+                <div class="col-md-6">
+                    <i class="icon-calendar-empty"></i> <span>publié le 28 mars 2015</span>
+                    <br/>
+                    <i class="icon-tags"></i>
+                    
+                    <a href="/tags/d3js/">d3js</a>
+                    
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <hr/>
+
+        <h4 class="">Cet article vous a plu ? Alors partagez le via les réseaux sociaux.</h4>
+<ul id="follow_us_contacts">
+    <li><a target="_blank" href="https://twitter.com/home?status=Parcours d&#39;initiation D3 à Nancy http://www.dev-institut.fr/actualites/2015/03/28/formation-initiation-D3-nancy-mars-2015/index.html"><i class="icon-twitter"></i></li>
+    <li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dev-institut.fr/actualites/2015/03/28/formation-initiation-D3-nancy-mars-2015/index.html"><i class="icon-facebook"></i></a></li>
+</ul>
+
+
+        <section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+    </div>
+    <aside class="col-md-3">
+        <div class=" box_style_1 z-depth-1">
+
+ <div class="widget  add_bottom_30">
+        <h4><i class="icon-users"></i> Suivez-nous</h4>
+        <ul id="follow_us_contacts">
+	<li><a href="/atom.xml"><i class="icon-rss"></i></a></li>
+    <li><a target="_blank" rel="noopener" href="http://twitter.com/devinstitut"><i class="icon-twitter"></i></li>
+    <li><a target="_blank" rel="noopener" href="https://www.facebook.com/pages/Dev-Institut/412216005603023"><i class="icon-facebook"></i></a></li>
+</ul>
+    </div>
+
+</div>
+
+
+    <div class="col-item z-depth-1">
+    <span class=""></span>
+    <div class="photo">
+        
+        <div class="cat_row"><a href="/formations/web/" class="initialism">web</a><span class="pull-right"><i class=" icon-clock"></i>2 jours</span></div>
+    </div>
+    <div class="info">
+        <div class="row">
+            <div class="course_info col-md-12 col-sm-12">
+                <h4>Intiation à D3</h4>
+                
+            </div>
+        </div>
+        <div class="separator clearfix">
+            <p class="btn-Détails"> <a href="/formations/web/d3js/"><i class=" icon-list"></i> Détails</a></p>
+        </div>
+    </div>
+</div>
+
+
+<a href="/formations" class="button_big z-depth-1 text-center pull-right">Voir le catalogue de formation</a>
+
+    </aside>
+
+
+
+
+</div>
+
+</section>
+<footer>
+    <div id="copy_right">© 2020 Dev Institut. Tous droits réservés. <a href="/pdf/dev-institut-cgv.pdf">Conditions générales de vente</a></div>
+</footer>
+
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/superfish.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/retina.min.js"></script>
+<script src="/js/validate.js"></script>
+<script src="/js/jquery.placeholder.js"></script>
+<script src="/js/functions.js"></script>
+<script src="/js/classie.js"></script>
+
+<script>
+    var disqus_shortname = 'devinstitut';
+    
+        var disqus_url = 'http://www.dev-institut.fr/actualites/2015/03/28/formation-initiation-D3-nancy-mars-2015/';
+    
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//go.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+ <script>
+var i_am_old_ie = false;
+ </script>
+<!--[if lt IE 9]>
+<script>
+i_am_old_ie = true;
+</script>
+<![endif]-->
+
+<script>
+    function getUrlParameter(sParam)
+    {
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++)
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam)
+            {
+                return sParameterName[1];
+            }
+        }
+    }
+
+    function isNotEmpty( el ){
+        return $.trim(el.val()) != '';
+    }
+
+    function isContactValid() {
+        return isNotEmpty($('#name_contact')) && isNotEmpty($('#lastname_contact')) && isNotEmpty($('#message_contact')) && isNotEmpty($('#phone_contact')) && isNotEmpty($('#email_contact'));
+    }
+
+    if ($('#message_contact') && getUrlParameter('formation')) {
+        var formation = decodeURIComponent(getUrlParameter('formation'));
+        $('#message_contact').val("Bonjour,\n\nVeuillez m'envoyer un devis à propos de la formation : " + formation + ". \n\nCordialement.");
+        $('#contact_title').text("Formation " + formation );
+
+
+    }
+
+    if ($('#message_contact')) {
+
+       
+
+        if (i_am_old_ie) {
+            $("#contact_formulaire").text("La version de votre navigateur n'est pas supportée par notre formulaire de contact. \nVeuillez nous contacter directement par email à l'adresse contact@devinstitut.fr.");
+            
+        } else {
+             $( "#submit-contact" ).click(function( event ) {
+            if (isContactValid()) {
+                $.support.cors = true;
+               
+                
+                 event.preventDefault();
+                
+                var data = {
+                    "entry.424656045": $('#name_contact').val(),
+                    "entry.1560201273": $('#lastname_contact').val(),
+                    "entry.1447732176": $('#message_contact').val(),
+                    "entry.1136583215": decodeURIComponent(getUrlParameter('formation')),
+                    "entry.419922850": $('#phone_contact').val(),
+                    "entry.2120372387": $('#email_contact').val()
+                };
+
+                var url = 'https://cors.5apps.com/?uri=https://docs.google.com/forms/d/1th2B1EVrV_JH1AmanU7npiZThlDzMa8OTzDzflwLmD4/formResponse';
+              
+                var posting = $.post( url, data );
+
+                posting.done(function( data ) {
+                    $('#name_contact').val('');
+                    $('#lastname_contact').val('');
+                    $('#message_contact').val('');
+                    $('#phone_contact').val('');
+                    $('#email_contact').val('');
+                    $('#contact_validation').text('');
+                    $('#contact_result').text('Nous avons bien reçu votre message. Nous vous recontactons dans les meilleurs délais.');
+
+                });
+
+                posting.fail(function( data ) {
+                    $('#contact_validation').text("Oops. Une erreur s'est produite lors de la soumission du formulaire. Veuillez nous contacter directement par email à l'adresse contact@dev-institut.fr.");
+                });
+            }  else {
+                $('#contact_validation').text('Veuillez remplir tous les champs.');
+            }
+
+        });
+        }
+
+       
+    }
+
+
+
+
+
+</script>
+
+
+
+
+</body>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="500px" height="504px" viewBox="0 0 500 504" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-skectch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="500" height="500" rx="15"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-15" y="-15" width="530" height="530">
+            <rect x="-15" y="-15" width="530" height="530" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rect-Dev">
+            <use fill="#191F26" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="30" xlink:href="#path-1"></use>
+        </g>
+        <text id="DEV" font-family="TrebuchetMS, Trebuchet MS" font-size="260" font-weight="normal" fill="#FFFFFF">
+            <tspan x="20" y="271">DEV</tspan>
+        </text>
+        <rect id="Rect-Institut" fill="#CC2262" x="-5.68434189e-14" y="333" width="500" height="167" rx="15"></rect>
+        <text id="Institut" font-family="TrebuchetMS, Trebuchet MS" font-size="144" font-weight="normal" fill="#FFFFFF">
+            <tspan x="16" y="472">Institut</tspan>
+        </text>
+        <path d="M2.5,336.5 L499.5,336.5" id="Line" stroke="#FFFFFF" stroke-width="15" stroke-linecap="square"></path>
+    </g>
+</svg>
